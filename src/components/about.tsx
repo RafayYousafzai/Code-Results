@@ -1,28 +1,27 @@
-import { Circle, Cpu, Lock, Sparkles, Zap } from "lucide-react";
+import { Circle } from "lucide-react";
 import { ScrollView } from "./scroll-view";
 import Image from "next/image";
 
 const ourPrinciples = [
   {
-    title: "Creativity with Purpose",
+    title: "Innovation First",
     description:
-      "Our designs aren’t just pretty; they’re built to solve problems and make an impact.",
+      "We believe automation should simplify life, not complicate it. Every solution we build is designed to be smart, scalable, and practical.",
   },
   {
-    title: "Collaboration is Key",
+    title: "Partnership Over Service",
     description:
-      "We work with you, not just for you. Great ideas come from teamwork.",
-  },
-
-  {
-    title: "Honest & Transparent",
-    description:
-      "No confusing jargon or hidden fees. Just clear communication and real results.",
+      "We don’t just deliver tools—we work alongside you to understand your business and create systems that truly fit your needs.",
   },
   {
-    title: "Details Matter",
+    title: "Transparency Always",
     description:
-      "The little things make a big difference. We sweat the small stuff, so you don’t have to.",
+      "Clear communication, honest advice, and real results. No hidden costs, no overpromises just trust and clarity.",
+  },
+  {
+    title: "Driven by Impact",
+    description:
+      "Our focus is on outcomes. From saving you hours each week to unlocking new revenue streams, results guide everything we do.",
   },
 ];
 
@@ -30,19 +29,20 @@ export default function ContentSection() {
   return (
     <section className="py-16 md:py-32" id="about">
       <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12">
-        <div className="mx-auto max-w-xl space-y-6 text-center md:space-y-12">
+        <div className="mx-auto max-w-4xl space-y-6 text-center md:space-y-12">
           <ScrollView>
             <h2 className="text-balance text-4xl font-medium lg:text-5xl">
               About Us
             </h2>
           </ScrollView>
           <ScrollView>
-            <p>
-              Lume Studio was born from a simple idea—great design should do
-              more than just look good; it should make an impact. What started
-              as a passion for creativity turned into a full-fledged design
-              agency dedicated to helping brands tell their stories, connect
-              with audiences, and stand out in a crowded world.
+            <p className="text-muted-foreground text-lg">
+              Era Tech was founded with a vision to make intelligent automation
+              accessible to every business. What started as a passion for AI and
+              software quickly grew into a mission: helping companies save time,
+              scale faster, and deliver better experiences for their customers.
+              From chatbots to complete workflow automation, we craft solutions
+              that don’t just keep up with the future they build it.
             </p>
           </ScrollView>
         </div>

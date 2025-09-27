@@ -105,7 +105,7 @@ export default function HeroSection() {
                   as="h1"
                   className="mt-8 text-balance text-5xl md:text-7xl lg:mt-16 xl:text-[5.25rem] font-semibold"
                 >
-                  Designs That Captivate, Brands That Shine.
+                  AI For Businesses.
                 </TextEffect>
                 <TextEffect
                   per="line"
@@ -113,11 +113,11 @@ export default function HeroSection() {
                   speedSegment={0.3}
                   delay={0.5}
                   as="p"
-                  className="mx-auto mt-8 max-w-2xl text-balance text-lg"
+                  className="mx-auto mt-8 max-w-3xl text-balance text-xl"
                 >
-                  At Lume Studio, we blend creativity and strategy to craft
-                  stunning websites, striking visuals, and unforgettable brand
-                  experiences that set you apart.
+                  Transform your business with AI automation. Chatbots, voice
+                  agents, lead generation, and workflow tools all designed to
+                  give you back 10-20 hours every week.
                 </TextEffect>
 
                 <AnimatedGroup

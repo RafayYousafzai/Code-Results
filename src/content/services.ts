@@ -1,58 +1,50 @@
 export const SERVICES_LIST = [
   {
-    name: "UI/UX & Web Design",
-    tags: [
-      "Figma",
-      "Wireframing",
-      "Prototyping",
-      "Responsive Design",
-      "User Testing",
-    ],
-    img: "/images/abstract-1.png",
+    name: "AI Customer Communication",
+    tags: ["Voice Agents", "Chatbots", "Follow-Ups"],
+    img: "/services/AI Customer Communication.png",
     url: "#",
     description:
-      "End-to-end digital design from wireframes to polished interfaces. We create intuitive, visually appealing experiences for websites and apps, backed by user research and iterative testing.",
+      "From 24/7 voice agents to smart chatbots and automated follow-ups, we streamline customer interactions across phone, web, and social platforms.",
   },
   {
-    name: "Brand Identity Design",
-    tags: [
-      "Logo Design",
-      "Brand Guidelines",
-      "Visual Identity",
-      "Typography",
-      "Color Theory",
-    ],
-    img: "/images/abstract-2.png",
+    name: "Sales & Marketing Automation",
+    tags: ["Lead Gen", "Email", "Social Media"],
+    img: "/services/Sale & Marketing.png",
     url: "#",
     description:
-      "Comprehensive branding packages including logos, style guides, and asset kits. We craft cohesive visual identities that communicate your brand’s essence across all touchpoints.",
+      "Automated lead generation, email campaigns, and social media engagement that help you attract, convert, and retain more customers effortlessly.",
   },
   {
-    name: "SEO & Website Audits",
-    tags: [
-      "Technical SEO",
-      "Keyword Strategy",
-      "On-Page Optimization",
-      "Analytics",
-      "Performance Tuning",
-    ],
-    img: "/images/abstract-3.png",
+    name: "Business Operations Automation",
+    tags: ["Data", "Invoices", "Workflows"],
+    img: "/services/Business Operations Automation.png",
     url: "#",
     description:
-      "Data-driven SEO audits and optimizations to improve rankings. We analyze technical health, content gaps, and backlink profiles to drive organic growth.",
+      "Eliminate repetitive admin tasks like data entry, invoicing, and reporting with intelligent workflows that improve accuracy and save time.",
   },
   {
-    name: "Social Media Marketing",
-    tags: [
-      "Meta Ads",
-      "Instagram Reels",
-      "Content Strategy",
-      "Community Management",
-      "Performance Tracking",
-    ],
-    img: "/images/abstract-5.png",
+    name: "E-commerce Solutions",
+    tags: ["Orders", "Customer Journeys", "Reviews"],
+    img: "/services/Ecommerce.png",
     url: "#",
     description:
-      "Full-service social media management—from organic content creation to paid campaigns. We build engaging narratives and measurable strategies tailored to each platform.",
+      "Automated systems for order management, customer journeys, and review collection that drive sales and boost customer loyalty.",
+  },
+  {
+    name: "Industry-Specific Automation",
+    tags: ["Healthcare", "Real Estate", "Restaurants"],
+    img: "/services/Industry Spacific.png",
+    url: "#",
+    description:
+      "Tailored solutions for your industry—whether it’s patient reminders, property inquiries, restaurant reservations, or professional services.",
+  },
+  {
+    name: "Web & Mobile Development",
+    tags: ["Web Apps", "Mobile Apps", "Full-Stack"],
+    img: "/services/Web & Mobile Development.png",
+    url: "#",
+    description:
+      "Custom web and mobile applications built with modern frameworks, designed to scale, and integrated seamlessly with your business processes.",
   },
 ];

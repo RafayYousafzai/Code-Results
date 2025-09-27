@@ -6,22 +6,19 @@ import { SERVICES_LIST } from "@/content/services";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ServicesSection2() {
+export default function Work() {
   return (
     <section className="py-16 md:py-32" id="services">
       <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
-        <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center">
+        <div className="relative z-10 mx-auto max-w-3xl space-y-6 text-center">
           <ScrollView>
-            <h2 className="text-4xl font-medium lg:text-5xl">
-              Design That Works for You
-            </h2>
+            <h2 className="text-4xl font-medium lg:text-5xl">Our Services</h2>
           </ScrollView>
           <ScrollView delay={0.2}>
-            <p>
-              At Lume Studio, we create designs that are more than just visually
-              appealing. They&apos;re built to solve problems, connect with
-              audience, and drive results. <br /> Whether you’re starting fresh
-              or refining your existing identity, <br /> we’ve got you covered.
+            <p className="text-muted-foreground text-lg">
+              From automation to full-stack development, we provide modern
+              solutions to help your business work smarter and grow faster.
+              Below are some of the key services we offer.
             </p>
           </ScrollView>
         </div>
@@ -33,7 +30,7 @@ export default function ServicesSection2() {
                 className="group overflow-hidden border-b py-10"
               >
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
-                  <div className="self-end lg:col-span-2">
+                  <div className="mt-[5%] lg:col-span-2">
                     <div className="flex flex-col gap-8 ">
                       <div className="space-y-4">
                         <ScrollView>
@@ -60,7 +57,7 @@ export default function ServicesSection2() {
                         </ScrollView>
                       </div>
                       <ScrollView delay={0.04}>
-                        <p className="text-muted-foreground">
+                        <p className="text-muted-foreground text-lg">
                           {service.description}
                         </p>
                       </ScrollView>
@@ -105,10 +102,10 @@ export default function ServicesSection2() {
                           <Image
                             src={service.img}
                             alt={service.name}
-                            height="480"
-                            width="720"
+                            height="800"
+                            width="800"
                             loading="lazy"
-                            className=" object-cover object-top  transition-all duration-500 w-full  aspect-[16/9]"
+                            className=" object-cover object-center  transition-all duration-500 w-[80%] ml-auto mr-2 aspect-[4/3] rounded-xl border border-black/10 bg-muted group-hover:scale-[1.02] dark:border-white/5"
                           />
                         </Link>
                       </InView>

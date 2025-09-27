@@ -5,41 +5,41 @@ import { ScrollView } from "./scroll-view";
 
 const members = [
   {
-    name: "Liam Brown",
+    name: "Rafay Khan",
     role: "Founder - CEO",
     avatar: "https://alt.tailus.io/images/team/member-one.webp",
-    link: "#",
+    link: "https://rafaykhan.dev/",
   },
-  {
-    name: "Elijah Jones",
-    role: "Co-Founder - CTO",
-    avatar: "https://alt.tailus.io/images/team/member-two.webp",
-    link: "#",
-  },
-  {
-    name: "Isabella Garcia",
-    role: "Sales Manager",
-    avatar: "https://alt.tailus.io/images/team/member-three.webp",
-    link: "#",
-  },
-  {
-    name: "Henry Lee",
-    role: "UX Engeneer",
-    avatar: "https://alt.tailus.io/images/team/member-four.webp",
-    link: "#",
-  },
-  {
-    name: "Ava Williams",
-    role: "Interaction Designer",
-    avatar: "https://alt.tailus.io/images/team/member-five.webp",
-    link: "#",
-  },
-  {
-    name: "Olivia Miller",
-    role: "Visual Designer",
-    avatar: "https://alt.tailus.io/images/team/member-six.webp",
-    link: "#",
-  },
+  // {
+  //   name: "Elijah Jones",
+  //   role: "Co-Founder - CTO",
+  //   avatar: "https://alt.tailus.io/images/team/member-two.webp",
+  //   link: "#",
+  // },
+  // {
+  //   name: "Isabella Garcia",
+  //   role: "Sales Manager",
+  //   avatar: "https://alt.tailus.io/images/team/member-three.webp",
+  //   link: "#",
+  // },
+  // {
+  //   name: "Henry Lee",
+  //   role: "UX Engeneer",
+  //   avatar: "https://alt.tailus.io/images/team/member-four.webp",
+  //   link: "#",
+  // },
+  // {
+  //   name: "Ava Williams",
+  //   role: "Interaction Designer",
+  //   avatar: "https://alt.tailus.io/images/team/member-five.webp",
+  //   link: "#",
+  // },
+  // {
+  //   name: "Olivia Miller",
+  //   role: "Visual Designer",
+  //   avatar: "https://alt.tailus.io/images/team/member-six.webp",
+  //   link: "#",
+  // },
 ];
 
 export default function TeamSection() {
