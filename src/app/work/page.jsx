@@ -1,9 +1,33 @@
+import { ArrowRight } from "lucide-react";
 import PortfolioSection from "@/components/sections/home/portfolio-section";
+import ContactSection from "@/components/contact";
+import Link from "next/link";
 
 export default function page() {
   return (
-    <div>
+    <div className="">
       <PortfolioSection />
+      <div className="mb-20">
+        <Link
+          href="/services"
+          className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
+        >
+          <span className="text-foreground text-base">All Services</span>
+          <span className="dark:border-background block h-8 w-1 border-l bg-white dark:bg-zinc-700"></span>
+
+          <div className="bg-background group-hover:bg-muted size-8 overflow-hidden rounded-full duration-500 -rotate-45 ">
+            <div className="flex w-16 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
+              <span className="flex size-8">
+                <ArrowRight className="m-auto size-4" />
+              </span>
+              <span className="flex size-8">
+                <ArrowRight className="m-auto size-4" />
+              </span>
+            </div>
+          </div>
+        </Link>
+      </div>
+      <ContactSection />
     </div>
   );
 }

@@ -37,12 +37,12 @@ export default function ContentSection() {
           </ScrollView>
           <ScrollView>
             <p className="text-muted-foreground text-lg">
-              Era Tech was founded with a vision to make intelligent automation
-              accessible to every business. What started as a passion for AI and
-              software quickly grew into a mission: helping companies save time,
-              scale faster, and deliver better experiences for their customers.
-              From chatbots to complete workflow automation, we craft solutions
-              that don’t just keep up with the future they build it.
+              Code Results was founded with a vision to make intelligent
+              automation accessible to every business. What started as a passion
+              for AI and software quickly grew into a mission: helping companies
+              save time, scale faster, and deliver better experiences for their
+              customers. From chatbots to complete workflow automation, we craft
+              solutions that don’t just keep up with the future they build it.
             </p>
           </ScrollView>
         </div>

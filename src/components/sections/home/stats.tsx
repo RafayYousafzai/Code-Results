@@ -14,8 +14,8 @@ export default function StatsSection() {
           </ScrollView>
           <ScrollView delay={0.2}>
             <p>
-              At Era Tech, we build intelligent solutions — from AI agents to
-              full-stack applications — that help businesses save time, scale
+              At Code Results, we build intelligent solutions — from AI agents
+              to full-stack applications — that help businesses save time, scale
               faster, and stay ahead in the digital era.
             </p>
           </ScrollView>

@@ -7,8 +7,8 @@ const members = [
   {
     name: "Rafay Khan",
     role: "Founder - CEO",
-    avatar: "https://alt.tailus.io/images/team/member-one.webp",
-    link: "https://rafaykhan.dev/",
+    avatar: "/images/team/rafay.jpg",
+    link: "https://www.linkedin.com/in/rafay-yousafzai-177568260/",
   },
   // {
   //   name: "Elijah Jones",

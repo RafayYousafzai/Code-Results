@@ -3,21 +3,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ScrollView } from "@/components/scroll-view";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-  MessageCircle,
-  Lightbulb,
-  Code,
-  TestTube,
-  Rocket,
-  Headphones,
-  ArrowRight,
-  Clock,
-} from "lucide-react";
+import { ArrowRight, Clock } from "lucide-react";
+import Image from "next/image";
 
 const processSteps = [
   {
     step: "01",
-    icon: MessageCircle,
+    image: "/images/process/1. Discovery & Consultation.webp",
     title: "Discovery & Consultation",
     description:
       "We start with a deep dive into your business challenges, goals, and current workflows. Our experts analyze your needs and identify automation opportunities.",
@@ -30,7 +22,7 @@ const processSteps = [
   },
   {
     step: "02",
-    icon: Lightbulb,
+    image: "/images/process/2. Strategy & Planning.webp",
     title: "Strategy & Planning",
     description:
       "Based on our findings, we create a tailored strategy with clear milestones, technology stack selection, and implementation timeline.",
@@ -43,7 +35,7 @@ const processSteps = [
   },
   {
     step: "03",
-    icon: Code,
+    image: "/images/process/3. Testing & Optimization.webp",
     title: "Development & Integration",
     description:
       "Our development team builds your solution using cutting-edge technology, ensuring seamless integration with your existing systems.",
@@ -52,7 +44,7 @@ const processSteps = [
   },
   {
     step: "04",
-    icon: TestTube,
+    image: "/images/process/4. Testing & Optimization.webp",
     title: "Testing & Optimization",
     description:
       "Rigorous testing across different scenarios, user acceptance testing, and performance optimization to ensure everything works perfectly.",
@@ -61,7 +53,7 @@ const processSteps = [
   },
   {
     step: "05",
-    icon: Rocket,
+    image: "/images/process/5. Launch & Deployment.webp",
     title: "Launch & Deployment",
     description:
       "Smooth deployment to production environment with monitoring, documentation, and team training to ensure successful adoption.",
@@ -74,7 +66,7 @@ const processSteps = [
   },
   {
     step: "06",
-    icon: Headphones,
+    image: "/images/process/6. Ongoing Support.webp",
     title: "Ongoing Support",
     description:
       "Continuous monitoring, regular updates, feature enhancements, and 24/7 support to ensure your solution evolves with your business.",
@@ -118,26 +110,23 @@ export default function ProcessSection() {
           {processSteps.map((step, index) => (
             <ScrollView key={index} delay={0.1 * index}>
               <div className="relative">
-                {/* Connecting Line */}
-                {index < processSteps.length - 1 && (
-                  <div className="absolute left-6 top-16 w-px h-24 bg-gradient-to-b from-primary/50 to-transparent hidden md:block" />
-                )}
-
-                <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <Card className="bg-slate-50 dark:bg-black/20 border-none shadow-2xl dark:shadow-none dark:border-t dark:border-b dark:border-white/30 hover:shadow-lg dark:hover:shadow-none transition-all duration-300 hover:-translate-y-1">
                   <CardContent className="p-6 md:p-8">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 items-start">
                       {/* Step Icon & Number */}
                       <div className="flex items-center gap-4 md:col-span-1">
                         <div className="relative">
-                          <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                            <step.icon className="h-6 w-6 text-primary" />
-                          </div>
-                          <div className="absolute -top-2 -right-2 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xs font-bold">
-                            {step.step}
-                          </div>
+                          <Image
+                            unoptimized
+                            src={step.image}
+                            alt={step.title}
+                            width={100}
+                            height={100}
+                            className="h-[80%] w-auto object-cover rounded-2xl text-primary"
+                          />
                         </div>
                         <div className="md:hidden">
-                          <h3 className="text-xl font-semibold">
+                          <h3 className="text-2xl font-semibold">
                             {step.title}
                           </h3>
                           <div className="flex items-center gap-2 text-sm text-muted-foreground mt-1">
@@ -190,7 +179,7 @@ export default function ProcessSection() {
 
         {/* Timeline Summary */}
         <ScrollView delay={0.4}>
-          <Card className="mt-16 bg-gradient-to-r from-primary/5 to-primary/10 border-primary/20">
+          <Card className="mt-20 bg-slate-50 dark:bg-black border-none hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
             <CardContent className="p-8 text-center">
               <h3 className="text-2xl font-semibold mb-4">Complete Timeline</h3>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">

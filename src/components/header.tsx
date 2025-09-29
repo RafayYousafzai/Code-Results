@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Logo } from "./logo";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { NAV_LINKS } from "@/content/nav";
@@ -82,6 +83,7 @@ export const HeroHeader = () => {
                 </ul>
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
+                <ThemeToggle />
                 {/* <Button
                   asChild
                   variant="outline"
@@ -92,7 +94,7 @@ export const HeroHeader = () => {
                     <span>Login</span>
                   </Link>
                 </Button> */}
-                <Button
+                {/* <Button
                   asChild
                   size="sm"
                   className={cn(isScrolled && "lg:hidden")}
@@ -100,8 +102,8 @@ export const HeroHeader = () => {
                   <Link href="/full-version">
                     <span>Full Version</span>
                   </Link>
-                </Button>
-                <Button
+                </Button> */}
+                {/* <Button
                   asChild
                   size="sm"
                   className={cn(isScrolled ? "lg:inline-flex" : "hidden")}
@@ -109,7 +111,7 @@ export const HeroHeader = () => {
                   <Link href="/full-version">
                     <span>Join waitlist</span>
                   </Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>

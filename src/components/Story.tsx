@@ -4,7 +4,7 @@ import { ScrollView } from "./scroll-view";
 
 export default function StorySection() {
   return (
-    <section className="py-16 md:py-32" id="our-story">
+    <section className="py-16 md:py-32" id="about">
       <div className="mx-auto max-w-6xl space-y-8 px-6 md:space-y-16">
         <div className="relative z-10 mx-auto max-w-3xl space-y-6 text-center md:space-y-12">
           <ScrollView>
@@ -14,11 +14,11 @@ export default function StorySection() {
           </ScrollView>
           <ScrollView delay={0.2}>
             <p className="text-muted-foreground text-lg">
-              At Era Tech, we started with a simple belief — technology should
-              empower people, not overwhelm them. From our early experiments
-              with automation to building scalable AI-driven solutions, our
-              journey has always been about solving real problems for real
-              businesses.
+              At Code Results, we started with a simple belief — technology
+              should empower people, not overwhelm them. From our early
+              experiments with automation to building scalable AI-driven
+              solutions, our journey has always been about solving real problems
+              for real businesses.
             </p>
           </ScrollView>
         </div>
@@ -29,7 +29,7 @@ export default function StorySection() {
               <CardContent className="space-y-4 p-6">
                 <h3 className="text-xl font-semibold">Our Mission</h3>
                 <p>
-                  At Era Tech, our mission was never just about building
+                  At Code Results, our mission was never just about building
                   software it has always been about building confidence for
                   businesses in a world that changes faster than ever. We
                   started with a simple observation: so many companies were

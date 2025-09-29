@@ -71,7 +71,7 @@ export default function ComparisonSection() {
           </ScrollView>
           <ScrollView>
             <h2 className="text-4xl font-medium lg:text-5xl">
-              Era Tech vs Others
+              Code Results vs Others
             </h2>
           </ScrollView>
           <ScrollView delay={0.2}>
@@ -94,7 +94,7 @@ export default function ComparisonSection() {
                   <div className="flex items-center gap-2 mb-2">
                     <Star className="h-5 w-5 text-primary fill-current" />
                     <h3 className="font-semibold text-lg text-primary">
-                      Era Tech
+                      Code Results
                     </h3>
                   </div>
                   <Badge className="bg-primary text-primary-foreground">
@@ -157,7 +157,7 @@ export default function ComparisonSection() {
                   Ready to Experience the Difference?
                 </h3>
                 <p className="text-muted-foreground">
-                  Join hundreds of businesses that chose Era Tech for faster
+                  Join hundreds of businesses that chose Code Results for faster
                   delivery, better results, and ongoing partnership.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

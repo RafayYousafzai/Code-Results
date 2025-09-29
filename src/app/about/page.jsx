@@ -1,11 +1,19 @@
+import StatsSection from "@/components/sections/home/stats";
 import StorySection from "@/components/Story";
-import AboutSection from "@/components/about";
+import ContactSection from "@/components/contact";
+import TeamSection from "@/components/team";
+import WhyChooseUsSection from "@/components/sections/home/why-choose-us";
+import ComparisonSection from "@/components/sections/home/comparison";
 
 export default function page() {
   return (
     <div>
-      <AboutSection />
       <StorySection />
+      <WhyChooseUsSection />
+      <ComparisonSection />
+      <StatsSection />
+      <TeamSection />
+      <ContactSection />
     </div>
   );
 }
