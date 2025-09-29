@@ -162,13 +162,13 @@ export default function ComparisonSection() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <Button asChild size="lg" className="group">
-                    <Link href="#contact">
+                    <Link href="/contact">
                       Start Your Project
                       <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </Button>
                   <Button variant="outline" size="lg" asChild>
-                    <Link href="#services">View Our Services</Link>
+                    <Link href="/services">View Our Services</Link>
                   </Button>
                 </div>
               </CardContent>

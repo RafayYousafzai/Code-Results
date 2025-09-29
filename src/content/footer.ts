@@ -1,3 +1,5 @@
+import Home from "@/app/page";
+
 export const FOOTER_LINKS = [
   {
     title: "Home",
@@ -5,22 +7,18 @@ export const FOOTER_LINKS = [
   },
   {
     title: "About",
-    href: "#about",
+    href: "/about",
   },
   {
-    title: "Team",
-    href: "#team",
+    title: "Work",
+    href: "/work",
   },
   {
     title: "Services",
-    href: "#services",
+    href: "/services",
   },
   {
-    title: "Portfolio",
-    href: "#portfolio",
-  },
-  {
-    title: "Testimonials",
-    href: "#testimonials",
+    title: "Contact",
+    href: "/contact",
   },
 ];

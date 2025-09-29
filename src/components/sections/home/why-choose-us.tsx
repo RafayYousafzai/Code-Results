@@ -91,7 +91,7 @@ export default function WhyChooseUsSection() {
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                     unoptimized
                   />
-                  <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px] transition-all duration-300 group-hover:bg-black/70" />
+                  <div className="absolute inset-0 bg-black/60 backdrop-blur-xl transition-all duration-300 group-hover:bg-black/70" />
                 </div>
 
                 <CardContent className="p-6 space-y-4 h-full flex flex-col relative z-10">
@@ -103,7 +103,7 @@ export default function WhyChooseUsSection() {
                       {reason.highlight}
                     </Badge>
                   </div>
-                  <h3 className="text-xl font-semibold text-white group-hover:text-primary-foreground transition-colors">
+                  <h3 className="text-xl font-semibold text-white dark:text-white group-hover:text-primary-foreground transition-colors">
                     {reason.title}
                   </h3>
                   <p className="text-gray-200 leading-relaxed flex-1">

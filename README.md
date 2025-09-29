@@ -1,4 +1,4 @@
-# Lume Studio - Next.js Template
+# Code Results - Next.js Template
 
 This project is a Next.js template built with TypeScript, designed for creating stunning websites with smooth animations and modern UI components.
 

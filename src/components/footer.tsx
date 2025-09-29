@@ -15,7 +15,7 @@ export default function FooterSection() {
             aria-label="go home"
             className="mx-auto block size-fit"
           >
-            <Logo />
+            <Logo accent={true} />
           </Link>
         </ScrollView>
         <ScrollView stagger delay={0.1}>
@@ -46,7 +46,7 @@ export default function FooterSection() {
         <ScrollView delay={0.15} viewMargin="0px 0px -20px 0px">
           <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
             <Link
-              href="#"
+              href="https://x.com/Rafay835113"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="X/Twitter"
@@ -66,7 +66,7 @@ export default function FooterSection() {
               </svg>
             </Link>
             <Link
-              href="#"
+              href="https://www.linkedin.com/in/rafay-yousafzai-177568260"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -86,7 +86,7 @@ export default function FooterSection() {
               </svg>
             </Link>
             <Link
-              href="#"
+              href="https://www.facebook.com/rafay.yousafzai0/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -105,7 +105,7 @@ export default function FooterSection() {
                 ></path>
               </svg>
             </Link>
-            <Link
+            {/* <Link
               href="#"
               target="_blank"
               rel="noopener noreferrer"
@@ -129,9 +129,9 @@ export default function FooterSection() {
                   color="currentColor"
                 ></path>
               </svg>
-            </Link>
+            </Link> */}
             <Link
-              href="#"
+              href="https://www.instagram.com/rafay_yousafzai/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -150,7 +150,7 @@ export default function FooterSection() {
                 ></path>
               </svg>
             </Link>
-            <Link
+            {/* <Link
               href="#"
               target="_blank"
               rel="noopener noreferrer"
@@ -169,13 +169,13 @@ export default function FooterSection() {
                   d="M16.6 5.82s.51.5 0 0A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48"
                 ></path>
               </svg>
-            </Link>
+            </Link> */}
           </div>
         </ScrollView>
         <ScrollView delay={0.2} viewMargin="0px 0px -20px 0px">
           <span className="text-muted-foreground block text-center text-sm">
             {" "}
-            © {new Date().getFullYear()} Lume Studio, All rights reserved
+            © {new Date().getFullYear()} Code Results, All rights reserved
           </span>
         </ScrollView>
       </div>

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { TextEffect } from "@/components/motion-primitives/text-effect";
 import { AnimatedGroup } from "@/components/motion-primitives/animated-group";
 import LogoCloud from "@/components/sections/home/logo-cloud";
+import { ArrowRight } from "lucide-react";
 
 const transitionVariants = {
   item: {
@@ -75,13 +76,13 @@ export default function HeroSection() {
             <div className="absolute inset-0 -z-10 size-full "></div>
             <div className="mx-auto max-w-7xl px-6">
               <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
-                {/* <AnimatedGroup variants={transitionVariants}>
+                <AnimatedGroup variants={transitionVariants}>
                   <Link
-                    href="#link"
+                    href="/contact"
                     className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
                   >
                     <span className="text-foreground text-sm">
-                      Introducing Support for AI Models
+                      Lets Start You AI Automation Journey!
                     </span>
                     <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
 
@@ -96,7 +97,7 @@ export default function HeroSection() {
                       </div>
                     </div>
                   </Link>
-                </AnimatedGroup> */}
+                </AnimatedGroup>
 
                 <TextEffect
                   preset="fade-in-blur"

@@ -39,7 +39,7 @@ export const HeroHeader = () => {
                 aria-label="home"
                 className="flex items-center space-x-2"
               >
-                <Logo />
+                <Logo accent={true} />
               </Link>
 
               <button

@@ -15,4 +15,8 @@ export const NAV_LINKS = [
     name: "Work",
     href: "/work",
   },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
 ];
