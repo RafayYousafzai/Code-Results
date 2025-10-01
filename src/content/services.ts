@@ -1,43 +1,43 @@
 export const SERVICES_LIST = [
   {
-    name: "AI Customer Communication",
-    tags: ["Voice Agents", "Chatbots", "Follow-Ups"],
+    name: "AI Voice Agents",
+    tags: ["Voice AI", "Customer Support", "Cold Calling", "Follow-ups"],
     img: "/services/AI Customer Communication.png",
-    url: "#",
+    url: "/services/voice-agents",
     description:
-      "From 24/7 voice agents to smart chatbots and automated follow-ups, we streamline customer interactions across phone, web, and social platforms.",
+      "Never miss a call again. Our AI voice agents handle customer support, answer questions, book appointments, and follow up with leads—24/7. They sound natural, understand context, and save you from hiring extra staff. Perfect for businesses tired of losing customers to voicemail.",
   },
   {
-    name: "Sales & Marketing Automation",
-    tags: ["Lead Gen", "Email", "Social Media"],
+    name: "Custom Chat Agents",
+    tags: ["WhatsApp", "Instagram", "Facebook", "Website Chat"],
     img: "/services/Sale & Marketing.png",
-    url: "#",
+    url: "/services/chat-agents",
     description:
-      "Automated lead generation, email campaigns, and social media engagement that help you attract, convert, and retain more customers effortlessly.",
+      "Get instant responses on every platform your customers use. We build smart chatbots for WhatsApp, Instagram, Facebook, and your website that actually understand what people are asking. They qualify leads, answer FAQs, and route complex issues to you only when needed.",
   },
   {
-    name: "Business Operations Automation",
-    tags: ["Data", "Invoices", "Workflows"],
+    name: "Lead Generation & Outreach",
+    tags: ["Lead Gen", "Email Campaigns", "Social Media", "Follow-ups"],
     img: "/services/Business Operations Automation.png",
-    url: "#",
+    url: "/services/lead-generation",
     description:
-      "Eliminate repetitive admin tasks like data entry, invoicing, and reporting with intelligent workflows that improve accuracy and save time.",
+      "Stop chasing leads manually. Our AI agents find potential customers, reach out with personalized messages, and follow up automatically until they respond. Works across email, social media, and any channel you choose. More leads, less effort.",
   },
   {
-    name: "E-commerce Solutions",
-    tags: ["Orders", "Customer Journeys", "Reviews"],
+    name: "Workflow Automation",
+    tags: ["Custom Workflows", "Data Entry", "Invoicing", "Reporting"],
     img: "/services/Ecommerce.png",
-    url: "#",
+    url: "/services/workflow-automation",
     description:
-      "Automated systems for order management, customer journeys, and review collection that drive sales and boost customer loyalty.",
+      "Kill the boring stuff. We automate repetitive tasks like data entry, invoicing, report generation, and anything else eating up your time. Custom-built workflows that connect your tools and handle the grunt work while you focus on growing your business.",
   },
   {
-    name: "Industry-Specific Automation",
-    tags: ["Healthcare", "Real Estate", "Restaurants"],
+    name: "Customer Journey Automation",
+    tags: ["Order Management", "Reviews", "Customer Experience"],
     img: "/services/Industry Spacific.png",
-    url: "#",
+    url: "/services/customer-journey",
     description:
-      "Tailored solutions for your industry—whether it’s patient reminders, property inquiries, restaurant reservations, or professional services.",
+      "Keep customers happy without lifting a finger. Automated systems that manage orders, send updates, request reviews, and handle the entire customer journey across WhatsApp, Instagram, your website, or wherever your customers are. Better experience, better reviews, less manual work.",
   },
   {
     name: "Web & Mobile Development",

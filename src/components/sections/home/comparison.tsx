@@ -9,52 +9,46 @@ import Link from "next/link";
 const comparisonData = {
   features: [
     {
-      feature: "Delivery Timeline",
-      eratech: "2-4 weeks",
-      agencies: "3-6 months",
-      freelancers: "1-3 months",
+      feature: "Project Timeline",
+      coderesults: "2-4 weeks typical",
+      agencies: "2-6 months average",
+      freelancers: "Unpredictable delays",
     },
     {
-      feature: "AI Integration",
-      eratech: "Advanced AI-powered solutions",
-      agencies: "Basic automation",
-      freelancers: "Limited or none",
+      feature: "Custom Solutions",
+      coderesults: "100% tailored to you",
+      agencies: "Template-based approach",
+      freelancers: "Varies by skill level",
     },
     {
-      feature: "Ongoing Support",
-      eratech: "24/7 partnership & updates",
-      agencies: "Business hours only",
-      freelancers: "Project-based only",
-    },
-    {
-      feature: "Cost Structure",
-      eratech: "Transparent, value-based",
-      agencies: "High overhead costs",
-      freelancers: "Hidden additional costs",
-    },
-    {
-      feature: "Scalability",
-      eratech: "Built for growth",
-      agencies: "Requires rebuilding",
-      freelancers: "Often not scalable",
-    },
-    {
-      feature: "Technology Stack",
-      eratech: "Cutting-edge, future-proof",
-      agencies: "Often outdated",
-      freelancers: "Varies greatly",
+      feature: "Pricing",
+      coderesults: "Fair & transparent",
+      agencies: "$10k-50k+ projects",
+      freelancers: "Cheaper but risky",
     },
     {
       feature: "Communication",
-      eratech: "Direct access to experts",
-      agencies: "Multiple layers",
-      freelancers: "Inconsistent availability",
+      coderesults: "Direct & responsive",
+      agencies: "Multiple layers, slow",
+      freelancers: "Hit or miss availability",
     },
     {
-      feature: "Quality Assurance",
-      eratech: "Rigorous testing & optimization",
-      agencies: "Standard QA",
-      freelancers: "Self-tested only",
+      feature: "Ongoing Support",
+      coderesults: "Always available",
+      agencies: "Extra fees for changes",
+      freelancers: "Often disappear after",
+    },
+    {
+      feature: "Tech Expertise",
+      coderesults: "Latest AI & automation",
+      agencies: "Outdated methods",
+      freelancers: "Limited skill range",
+    },
+    {
+      feature: "Business Focus",
+      coderesults: "Small & medium businesses",
+      agencies: "Enterprise clients only",
+      freelancers: "No business strategy",
     },
   ],
 };
@@ -66,18 +60,18 @@ export default function ComparisonSection() {
         <div className="relative z-10 mx-auto max-w-3xl space-y-6 text-center">
           <ScrollView>
             <Badge variant="outline" className="mb-4">
-              Market Comparison
+              Why Choose Us
             </Badge>
           </ScrollView>
           <ScrollView>
             <h2 className="text-4xl font-medium lg:text-5xl">
-              Code Results vs Others
+              Code Results vs The Rest
             </h2>
           </ScrollView>
           <ScrollView delay={0.2}>
-            <p className="text-muted-foreground text-lg">
-              See how we stack up against traditional agencies and freelancers.
-              The choice becomes clear when you compare what really matters.
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              You have options. Here&lsquo;s an honest look at how we compare to
+              traditional agencies and freelancers—no BS, just facts.
             </p>
           </ScrollView>
         </div>
@@ -88,7 +82,7 @@ export default function ComparisonSection() {
               {/* Header */}
               <div className="grid grid-cols-4 gap-4 mb-6">
                 <div className="p-4">
-                  <h3 className="font-semibold text-lg">Features</h3>
+                  <h3 className="font-semibold text-lg">What Matters</h3>
                 </div>
                 <div className="p-4 bg-primary/10 rounded-lg border-2 border-primary/20">
                   <div className="flex items-center gap-2 mb-2">
@@ -98,12 +92,12 @@ export default function ComparisonSection() {
                     </h3>
                   </div>
                   <Badge className="bg-primary text-primary-foreground">
-                    Recommended
+                    Best Value
                   </Badge>
                 </div>
                 <div className="p-4 bg-muted/50 rounded-lg">
                   <h3 className="font-semibold text-lg text-muted-foreground">
-                    Traditional Agencies
+                    Big Agencies
                   </h3>
                 </div>
                 <div className="p-4 bg-muted/50 rounded-lg">
@@ -126,7 +120,7 @@ export default function ComparisonSection() {
                     <div className="flex items-center p-3 bg-primary/5 rounded-lg border border-primary/20">
                       <Check className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
                       <span className="text-sm font-medium text-primary">
-                        {item.eratech}
+                        {item.coderesults}
                       </span>
                     </div>
                     <div className="flex items-center p-3 bg-muted/30 rounded-lg">
@@ -154,21 +148,21 @@ export default function ComparisonSection() {
             <Card className="max-w-2xl mx-auto bg-gradient-to-r from-primary/10 to-primary/5 border-primary/20">
               <CardContent className="p-8 space-y-4">
                 <h3 className="text-2xl font-semibold">
-                  Ready to Experience the Difference?
+                  See the Difference for Yourself
                 </h3>
-                <p className="text-muted-foreground">
-                  Join hundreds of businesses that chose Code Results for faster
-                  delivery, better results, and ongoing partnership.
+                <p className="text-muted-foreground leading-relaxed">
+                  No commitment needed. Let&lsquo;s have a quick call to see if
+                  we&lsquo;re the right fit for your business.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <Button asChild size="lg" className="group">
                     <Link href="/contact">
-                      Start Your Project
+                      Book a Free Call
                       <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </Button>
                   <Button variant="outline" size="lg" asChild>
-                    <Link href="/services">View Our Services</Link>
+                    <Link href="/services">See What We Build</Link>
                   </Button>
                 </div>
               </CardContent>

@@ -3,6 +3,7 @@ import { InView } from "@/components/motion-primitives/in-view";
 import { ScrollView, ScrollViewStaggerWrapper } from "@/components/scroll-view";
 import { Badge } from "@/components/ui/badge";
 import { SERVICES_LIST } from "@/content/services";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -57,7 +58,7 @@ export default function Work() {
                         </ScrollView>
                       </div>
                       <ScrollView delay={0.04}>
-                        <p className="text-muted-foreground text-lg">
+                        <p className="text-muted-foreground text-lg -mt-6">
                           {service.description}
                         </p>
                       </ScrollView>
@@ -116,6 +117,27 @@ export default function Work() {
             ))}
           </div>
         </div>
+      </div>
+
+      <div className="mt-20">
+        <Link
+          href="/contact"
+          className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
+        >
+          <span className="text-foreground text-base">Let&lsquo;s Talk</span>
+          <span className="dark:border-background block h-8 w-1 border-l bg-white dark:bg-zinc-700"></span>
+
+          <div className="bg-background group-hover:bg-muted size-8 overflow-hidden rounded-full duration-500 -rotate-45 ">
+            <div className="flex w-16 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
+              <span className="flex size-8">
+                <ArrowRight className="m-auto size-4" />
+              </span>
+              <span className="flex size-8">
+                <ArrowRight className="m-auto size-4" />
+              </span>
+            </div>
+          </div>
+        </Link>
       </div>
     </section>
   );

@@ -10,79 +10,80 @@ const processSteps = [
   {
     step: "01",
     image: "/images/process/1. Discovery & Consultation.webp",
-    title: "Discovery & Consultation",
+
+    title: "Discovery Call",
     description:
-      "We start with a deep dive into your business challenges, goals, and current workflows. Our experts analyze your needs and identify automation opportunities.",
-    duration: "1-2 days",
+      "We start with a quick call to understand your business, what's eating up your time, and what you actually need. An honest conversation about whether automation makes sense for you.",
+    duration: "30-45 minutes",
     deliverables: [
-      "Requirements document",
-      "Technical assessment",
-      "Project roadmap",
+      "Clear understanding of your challenges",
+      "Honest assessment if AI can help",
+      "Rough idea of what's possible",
     ],
   },
   {
     step: "02",
     image: "/images/process/2. Strategy & Planning.webp",
+
     title: "Strategy & Planning",
     description:
-      "Based on our findings, we create a tailored strategy with clear milestones, technology stack selection, and implementation timeline.",
-    duration: "2-3 days",
+      "We map out exactly what we'll build, how it'll work with your current setup, and what results you can expect. You'll see the plan before we write a single line of code.",
+    duration: "3-5 days",
     deliverables: [
-      "Solution architecture",
-      "Technology blueprint",
-      "Timeline & milestones",
+      "Detailed automation roadmap",
+      "Clear timeline and milestones",
+      "Transparent pricing breakdown",
     ],
   },
   {
     step: "03",
     image: "/images/process/3. Testing & Optimization.webp",
-    title: "Development & Integration",
+
+    title: "Building Your Solution",
     description:
-      "Our development team builds your solution using cutting-edge technology, ensuring seamless integration with your existing systems.",
+      "This is where the magic happens. We build and test your custom automation, keeping you updated throughout. You'll see progress, not just promises.",
     duration: "1-3 weeks",
-    deliverables: ["MVP development", "API integrations", "Progress updates"],
+    deliverables: [
+      "Custom-built automation system",
+      "Regular progress updates",
+      "Testing and quality checks",
+    ],
   },
   {
     step: "04",
     image: "/images/process/4. Testing & Optimization.webp",
-    title: "Testing & Optimization",
+
+    title: "Launch & Training",
     description:
-      "Rigorous testing across different scenarios, user acceptance testing, and performance optimization to ensure everything works perfectly.",
-    duration: "2-5 days",
-    deliverables: ["QA testing report", "Performance metrics", "Bug fixes"],
+      "We don't just hand you the keys and disappear. We'll walk you through everything, make sure it works smoothly, and show you how to use it. Easy, no-tech-speak training.",
+    duration: "1-2 days",
+    deliverables: [
+      "Full system launch",
+      "Hands-on training session",
+      "Simple documentation you'll actually use",
+    ],
   },
   {
     step: "05",
     image: "/images/process/5. Launch & Deployment.webp",
-    title: "Launch & Deployment",
-    description:
-      "Smooth deployment to production environment with monitoring, documentation, and team training to ensure successful adoption.",
-    duration: "1-2 days",
-    deliverables: [
-      "Live deployment",
-      "User documentation",
-      "Training materials",
-    ],
-  },
-  {
-    step: "06",
-    image: "/images/process/6. Ongoing Support.webp",
+
     title: "Ongoing Support",
     description:
-      "Continuous monitoring, regular updates, feature enhancements, and 24/7 support to ensure your solution evolves with your business.",
+      "We stick around. If something breaks, needs tweaking, or you want to add new features—we're here. Quick responses, real solutions, no ghosting.",
     duration: "Ongoing",
     deliverables: [
-      "24/7 monitoring",
-      "Regular updates",
-      "Feature enhancements",
+      "Priority support when you need it",
+      "Regular check-ins and optimizations",
+      "Updates and improvements as you grow",
     ],
   },
 ];
+// image: "/images/process/6. Ongoing Support.webp",
 
 export default function ProcessSection() {
   return (
     <section
-      className="py-16 md:py-32 bg-gradient-to-b from-muted/20 to-background"
+      className="pb-16 md:py-32 bg-gradient-to-b from-muted/20 to-background"
       id="process"
     >
       <div className="mx-auto max-w-6xl space-y-8 px-6 md:space-y-16">
@@ -181,27 +182,31 @@ export default function ProcessSection() {
         <ScrollView delay={0.4}>
           <Card className="mt-20 bg-slate-50 dark:bg-black border-none hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
             <CardContent className="p-8 text-center">
-              <h3 className="text-2xl font-semibold mb-4">Complete Timeline</h3>
+              <h3 className="text-2xl font-semibold mb-4">
+                Ready to Get Started?
+              </h3>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-primary rounded-full" />
-                  <span className="font-medium">Total Duration: 2-4 weeks</span>
+                  <span className="font-medium">
+                    Typical Timeline: 2-4 weeks
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-primary/60 rounded-full" />
                   <span className="text-muted-foreground">
-                    From concept to launch
+                    From first call to launch
                   </span>
                 </div>
               </div>
-              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Our streamlined process delivers results faster than traditional
-                agencies while maintaining the highest quality standards and
-                keeping you informed every step of the way.
+              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto leading-relaxed">
+                Most projects go live within a month. We work fast without
+                cutting corners, and you&lsquo;ll know exactly what&lsquo;s
+                happening at every step. No surprises, no endless delays.
               </p>
               <Button size="lg" asChild>
                 <a href="#contact">
-                  Start Your Project Today
+                  Let&lsquo;s Talk About Your Business
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>

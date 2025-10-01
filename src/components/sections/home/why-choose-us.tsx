@@ -9,45 +9,45 @@ import Image from "next/image";
 const reasons = [
   {
     image: "/images/process/1. Discovery & Consultation.webp",
-    title: "Proven Results",
+    title: "Built for YOUR Business",
     description:
-      "Over 200+ successful projects delivered with measurable ROI improvements averaging 40% cost reduction.",
-    highlight: "40% Cost Reduction",
+      "No templates. No one-size-fits-all. Every automation we create is custom-built around how your business actually works—not how we think it should work.",
+    highlight: "Custom solutions that fit perfectly",
   },
   {
     image: "/images/process/2. Strategy & Planning.webp",
-    title: "Lightning Fast Delivery",
+    title: "We Focus on Real Results",
     description:
-      "From concept to deployment in 2-4 weeks. Our streamlined process gets you results quickly without compromising quality.",
-    highlight: "2-4 Week Delivery",
+      "We're not here to sell you fancy tech you don't need. We build automation that saves you actual hours, brings in more leads, and makes your daily work easier. That's it.",
+    highlight: "Measurable time and cost savings",
   },
   {
     image: "/images/process/3. Testing & Optimization.webp",
-    title: "Future-Proof Technology",
+    title: "Honest About What Works",
     description:
-      "Built with cutting-edge AI and modern frameworks that scale with your business and adapt to changing needs.",
-    highlight: "AI-Powered",
+      "If AI automation isn't the right solution for your problem, we'll tell you. We'd rather be upfront than waste your time and money on something that won't deliver.",
+    highlight: "No overselling, just honest advice",
   },
   {
     image: "/images/process/5. Launch & Deployment.webp",
-    title: "24/7 Support & Partnership",
+    title: "We Stick Around",
     description:
-      "We're not just vendors - we're partners. Ongoing support, regular updates, and continuous optimization included.",
-    highlight: "Always Available",
+      "Launch day isn't goodbye. We're here when things break, when you have questions, or when you want to add new features. Quick responses, no disappearing acts.",
+    highlight: "Ongoing support when you need it",
   },
   {
     image: "/images/process/6. Ongoing Support.webp",
-    title: "Industry Expertise",
+    title: "We Speak Human, Not Tech",
     description:
-      "Deep knowledge across e-commerce, real estate, healthcare, and more. We understand your specific challenges.",
-    highlight: "Multi-Industry",
+      "No confusing jargon. No endless meetings. We explain things clearly, keep you updated, and make the whole process painless. You'll always know what's happening.",
+    highlight: "Clear communication every step",
   },
   {
     image: "/images/process/4. Testing & Optimization.webp",
-    title: "No-Code Integration",
+    title: "Built for Small & Medium Businesses",
     description:
-      "Seamlessly integrates with your existing tools. No complex migrations or lengthy downtimes required.",
-    highlight: "Zero Disruption",
+      "We know you're not a massive corporation with unlimited budget. Our solutions are priced fairly and designed specifically for businesses like yours that need to grow smart.",
+    highlight: "Fair pricing, maximum value",
   },
 ];
 

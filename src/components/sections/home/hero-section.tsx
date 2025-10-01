@@ -30,9 +30,9 @@ const transitionVariants = {
 export default function HeroSection() {
   return (
     <>
-      <div className="overflow-hidden min-h-screen">
-        <section>
-          <div className="relative pt-24 md:pt-36">
+      <div className="overflow-hidden">
+        <section className="min-h-screen flex flex-col">
+          <div className="relative pt-24 md:pt-36 flex-grow">
             <AnimatedGroup
               variants={{
                 container: {
@@ -74,7 +74,7 @@ export default function HeroSection() {
             </AnimatedGroup>
 
             <div className="absolute inset-0 -z-10 size-full "></div>
-            <div className="mx-auto max-w-7xl px-6">
+            <div className="mx-auto px-6">
               <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
                 <AnimatedGroup variants={transitionVariants}>
                   <Link
@@ -82,7 +82,7 @@ export default function HeroSection() {
                     className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
                   >
                     <span className="text-foreground text-sm">
-                      Lets Start You AI Automation Journey!
+                      Lets Start Your AI Automation Journey.
                     </span>
                     <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
 
@@ -103,9 +103,9 @@ export default function HeroSection() {
                   preset="fade-in-blur"
                   speedSegment={0.3}
                   as="h1"
-                  className="mt-8 text-balance text-5xl md:text-7xl lg:mt-16 xl:text-[5.25rem] font-semibold"
+                  className=" text-left md:text-center mt-8 text-balance text-4xl md:text-6xl xl:text-7xl lg:mt-16 font-bold mx-auto max-w-5xl leading-tight"
                 >
-                  AI For Businesses.
+                  Stop doing repetitive work. Let AI handle it.
                 </TextEffect>
                 <TextEffect
                   per="line"
@@ -113,11 +113,14 @@ export default function HeroSection() {
                   speedSegment={0.3}
                   delay={0.5}
                   as="p"
-                  className="mx-auto mt-8 max-w-3xl text-balance text-xl"
+                  className=" text-left md:text-center mx-auto mt-6 lg:mt-8 max-w-2xl text-balance text-lg leading-relaxed text-gray-600 dark:text-gray-300"
                 >
-                  Transform your business with AI automation. Chatbots, voice
-                  agents, lead generation, and workflow tools all designed to
-                  give you back 10-20 hours every week.
+                  Running a business is hard enough without spending hours on
+                  the same tasks every day. We build custom AI automation that
+                  fits your business perfectly so you can focus on what actually
+                  matters. Whether its handling customer messages, organizing
+                  data, or managing your workflow, we make it simple and save
+                  you serious time.
                 </TextEffect>
 
                 <AnimatedGroup
@@ -132,7 +135,7 @@ export default function HeroSection() {
                     },
                     ...transitionVariants,
                   }}
-                  className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row"
+                  className="mt-8 flex flex-col items-center justify-center gap-2 md:flex-row"
                 >
                   <div
                     key={1}
@@ -156,20 +159,18 @@ export default function HeroSection() {
                     className="h-10.5 rounded-xl px-5"
                   >
                     <Link
-                      href="https://github.com/RafayYousafzai/"
-                      target="_black"
+                      href="https://www.linkedin.com/in/rafay-yousafzai-177568260/"
+                      target="_blank"
                     >
                       <svg
                         className="size-6"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
                       >
-                        <path
-                          fill="currentColor"
-                          d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
-                        />
+                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
                       </svg>
-                      <span className="text-nowrap">Github</span>
+                      <span className="text-nowrap">LinkedIn</span>
                     </Link>
                   </Button>
                 </AnimatedGroup>
@@ -189,7 +190,7 @@ export default function HeroSection() {
               ...transitionVariants,
             }}
           >
-            <div className="relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
+            <div className="relative -mr-56 overflow-hidden px-2 sm:mr-0  -mt-6">
               <LogoCloud />
             </div>
           </AnimatedGroup>

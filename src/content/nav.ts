@@ -11,10 +11,10 @@ export const NAV_LINKS = [
     name: "Services",
     href: "/services",
   },
-  {
-    name: "Work",
-    href: "/work",
-  },
+  // {
+  //   name: "Work",
+  //   href: "/work",
+  // },
   {
     name: "Contact",
     href: "/contact",
