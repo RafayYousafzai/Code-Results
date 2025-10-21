@@ -6,6 +6,8 @@ import { HeroHeader } from "@/components/header";
 import FooterSection from "@/components/footer";
 import { Providers } from "./providers";
 import StructuredData from "@/components/structured-data";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -155,6 +157,8 @@ export default function RootLayout({
             <FooterSection />
           </Providers>
         </ThemeProvider>
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
