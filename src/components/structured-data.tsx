@@ -1,6 +1,8 @@
+// This component should be a SERVER COMPONENT for better SEO crawling
+// Structured data is static and should be rendered on the server
 import Script from "next/script";
 
-const StructuredData = () => {
+export default function StructuredData() {
   // Organization Schema - Establishes your business identity
   const organizationSchema = {
     "@context": "https://schema.org",
@@ -273,6 +275,4 @@ const StructuredData = () => {
       />
     </>
   );
-};
-
-export default StructuredData;
+}

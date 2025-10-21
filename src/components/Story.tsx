@@ -1,17 +1,17 @@
-"use client";
+// Optimized for SEO: Content is server-rendered, only animations are client-side
 import { Card, CardContent } from "@/components/ui/card";
-import { ScrollView } from "./scroll-view";
+import { StorySectionClient } from "./story-client";
 
 export default function StorySection() {
   return (
     <section className="py-16 md:py-32" id="about">
       <div className="mx-auto max-w-6xl space-y-8 px-6 md:space-y-16">
         <div className="relative z-10 mx-auto max-w-3xl space-y-6 text-center md:space-y-12">
-          <ScrollView>
+          <StorySectionClient>
             <h2 className="text-4xl font-medium lg:text-5xl">
               Why I Started Code Results
             </h2>
-          </ScrollView>
+          </StorySectionClient>
           {/* <ScrollView delay={0.2}>
             <p className="text-muted-foreground text-lg leading-relaxed">
               I watched too many business owners waste hours every day on tasks
@@ -29,7 +29,7 @@ export default function StorySection() {
           </ScrollView> */}
         </div>
 
-        <ScrollView delay={0.3}>
+        <StorySectionClient>
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-4 lg:grid-rows-2">
             <Card className="sm:col-span-2 lg:row-span-2">
               <CardContent className="space-y-4 p-6">
@@ -95,7 +95,7 @@ export default function StorySection() {
               </CardContent>
             </Card>
           </div>
-        </ScrollView>
+        </StorySectionClient>
       </div>
     </section>
   );

@@ -1,3 +1,5 @@
+// Server Component - Critical for local SEO
+// Contact information is fully crawlable by search engines
 import {
   Mail,
   MapPin,
@@ -9,7 +11,7 @@ import {
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
-import { ScrollView } from "./scroll-view";
+import { ContactScrollView } from "./contact-client";
 
 export default function FeaturesSection() {
   return (
@@ -18,19 +20,19 @@ export default function FeaturesSection() {
         <div className="grid items-center gap-12 md:grid-cols-2 md:gap-12 lg:grid-cols-5 lg:gap-24">
           <div className="lg:col-span-2">
             <div className="md:pr-6 lg:pr-0">
-              <ScrollView>
+              <ContactScrollView>
                 <h2 className="text-4xl font-semibold lg:text-5xl">
                   Let&apos;s Talk
                 </h2>
-              </ScrollView>
-              <ScrollView>
+              </ContactScrollView>
+              <ContactScrollView>
                 <p className="mt-6">
                   We&apos;d love to hear from you! Feel free to reach out to us
                   for any inquiries or to schedule a call.
                 </p>
-              </ScrollView>
+              </ContactScrollView>
             </div>
-            <ScrollView delay={0.2}>
+            <ContactScrollView delay={0.2}>
               <ul className="mt-8 divide-y border-y *:flex *:items-center *:gap-3 *:py-3">
                 <li>
                   <Link
@@ -70,11 +72,11 @@ export default function FeaturesSection() {
                   </Link>
                 </li>
               </ul>
-            </ScrollView>
+            </ContactScrollView>
           </div>
           <div className="lg:col-span-3">
             <div className="grid gap-6 md:grid-cols-2">
-              <ScrollView>
+              <ContactScrollView>
                 <Card className="p-6 h-60 border border-border/40 bg-card/80 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
                   <div className="flex items-center gap-3 mb-4">
                     <Clock className="size-6 text-primary" />
@@ -88,9 +90,9 @@ export default function FeaturesSection() {
                     <p className="text-xs mt-3">Pakistan Standard Time (PKT)</p>
                   </div>
                 </Card>
-              </ScrollView>
+              </ContactScrollView>
 
-              <ScrollView delay={0.1}>
+              <ContactScrollView delay={0.1}>
                 <Card className="p-6 h-60 border border-border/40 bg-card/80 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
                   <div className="flex items-center gap-3 mb-4">
                     <MessageCircle className="size-6 text-primary" />
@@ -114,9 +116,9 @@ export default function FeaturesSection() {
                     </Link>
                   </div>
                 </Card>
-              </ScrollView>
+              </ContactScrollView>
 
-              <ScrollView delay={0.2}>
+              <ContactScrollView delay={0.2}>
                 <Card className="p-6 h-60 border border-border/40 bg-card/80 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
                   <div className="flex items-center gap-3 mb-4">
                     <Globe className="size-6 text-primary" />
@@ -141,9 +143,9 @@ export default function FeaturesSection() {
                     </Link>
                   </div>
                 </Card>
-              </ScrollView>
+              </ContactScrollView>
 
-              <ScrollView delay={0.3}>
+              <ContactScrollView delay={0.3}>
                 <Card className="p-6 h-60 border border-border/40 bg-card/80 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
                   <div className="flex items-center gap-3 mb-4">
                     <PhoneCall className="size-6 text-primary" />
@@ -162,7 +164,7 @@ export default function FeaturesSection() {
                     </p>
                   </div>
                 </Card>
-              </ScrollView>
+              </ContactScrollView>
             </div>
           </div>
         </div>

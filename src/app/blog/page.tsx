@@ -1,8 +1,10 @@
+// Server Component - Better for SEO and crawling
 import { Metadata } from "next";
 import Link from "next/link";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "AI Automation Blog & Resources | Code Results",
@@ -61,12 +63,14 @@ export default function BlogIndex() {
           <Card className="mb-16 overflow-hidden">
             <div className="grid md:grid-cols-2 gap-0">
               <div className="relative h-64 md:h-auto">
-                <img
+                <Image
                   src={blogPosts[0].image}
                   alt={blogPosts[0].title}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  priority
                 />
-                <span className="absolute top-4 left-4 px-3 py-1 text-xs font-semibold rounded-full bg-primary text-primary-foreground">
+                <span className="absolute top-4 left-4 px-3 py-1 text-xs font-semibold rounded-full bg-primary text-primary-foreground z-10">
                   Featured
                 </span>
               </div>
@@ -111,10 +115,11 @@ export default function BlogIndex() {
               className="overflow-hidden hover:shadow-lg transition-shadow"
             >
               <div className="relative h-48">
-                <img
+                <Image
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <CardContent className="p-6">

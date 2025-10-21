@@ -1,6 +1,7 @@
-"use client";
+// Server Component - SEO Optimized
+// Process steps are fully crawlable by search engines
 import { Card, CardContent } from "@/components/ui/card";
-import { ScrollView } from "@/components/scroll-view";
+import { ProcessScrollView } from "./process-client";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock } from "lucide-react";
@@ -88,28 +89,28 @@ export default function ProcessSection() {
     >
       <div className="mx-auto max-w-6xl space-y-8 px-6 md:space-y-16">
         <div className="relative z-10 mx-auto max-w-3xl space-y-6 text-center">
-          <ScrollView>
+          <ProcessScrollView>
             <Badge variant="outline" className="mb-4">
               Our Process
             </Badge>
-          </ScrollView>
-          <ScrollView>
+          </ProcessScrollView>
+          <ProcessScrollView>
             <h2 className="text-4xl font-medium lg:text-5xl">
               How We Bring Your Vision to Life
             </h2>
-          </ScrollView>
-          <ScrollView delay={0.2}>
+          </ProcessScrollView>
+          <ProcessScrollView delay={0.2}>
             <p className="text-muted-foreground text-lg">
               Our proven 6-step process ensures smooth delivery from concept to
               launch, with complete transparency and regular communication
               throughout.
             </p>
-          </ScrollView>
+          </ProcessScrollView>
         </div>
 
         <div className="space-y-8 md:space-y-12">
           {processSteps.map((step, index) => (
-            <ScrollView key={index} delay={0.1 * index}>
+            <ProcessScrollView key={index} delay={0.1 * index}>
               <div className="relative">
                 <Card className="bg-slate-50 dark:bg-black/20 border-none shadow-2xl dark:shadow-none dark:border-t dark:border-b dark:border-white/30 hover:shadow-lg dark:hover:shadow-none transition-all duration-300 hover:-translate-y-1">
                   <CardContent className="p-6 md:p-8">
@@ -174,12 +175,12 @@ export default function ProcessSection() {
                   </CardContent>
                 </Card>
               </div>
-            </ScrollView>
+            </ProcessScrollView>
           ))}
         </div>
 
         {/* Timeline Summary */}
-        <ScrollView delay={0.4}>
+        <ProcessScrollView delay={0.4}>
           <Card className="mt-20 bg-slate-50 dark:bg-black border-none hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
             <CardContent className="p-8 text-center">
               <h3 className="text-2xl font-semibold mb-4">
@@ -212,7 +213,7 @@ export default function ProcessSection() {
               </Button>
             </CardContent>
           </Card>
-        </ScrollView>
+        </ProcessScrollView>
       </div>
     </section>
   );

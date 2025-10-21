@@ -1,5 +1,7 @@
+// Server Component - Optimal for SEO crawling and ranking
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -66,11 +68,13 @@ export default function BlogPost() {
         </header>
 
         {/* Featured Image */}
-        <div className="mb-12 rounded-xl overflow-hidden border">
-          <img
+        <div className="mb-12 rounded-xl overflow-hidden border relative h-96">
+          <Image
             src="/blog/automation-tasks.jpg"
             alt="Business automation tasks illustration"
-            className="w-full h-auto"
+            fill
+            className="object-cover"
+            priority
           />
         </div>
 
@@ -316,11 +320,14 @@ export default function BlogPost() {
         {/* Author Bio */}
         <div className="mt-16 pt-8 border-t">
           <div className="flex items-start gap-4">
-            <img
-              src="/team/rafay.jpg"
-              alt="Rafay Yousafzai"
-              className="w-16 h-16 rounded-full"
-            />
+            <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+              <Image
+                src="/team/rafay.jpg"
+                alt="Rafay Yousafzai"
+                fill
+                className="object-cover"
+              />
+            </div>
             <div>
               <h3 className="font-semibold text-lg">Rafay Yousafzai</h3>
               <p className="text-sm text-muted-foreground mb-2">

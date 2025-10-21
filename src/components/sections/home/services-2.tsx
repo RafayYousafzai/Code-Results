@@ -106,7 +106,7 @@ export default function Work() {
                             height="800"
                             width="800"
                             loading="lazy"
-                            className=" object-cover object-center  transition-all duration-500 w-[80%] ml-auto mr-2 aspect-[4/3] rounded-xl border border-black/10 bg-muted group-hover:scale-[1.02] dark:border-white/5"
+                            className=" object-cover object-center  transition-all duration-500 w-full md:w-[80%] md:ml-auto mr-2 aspect-[4/3] rounded-xl border border-black/10 bg-muted group-hover:scale-[1.02] dark:border-white/5"
                           />
                         </Link>
                       </InView>

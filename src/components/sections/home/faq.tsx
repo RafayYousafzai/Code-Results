@@ -1,12 +1,7 @@
-"use client";
-
+// Server Component for FAQ - Better for SEO crawling
+// Only the Accordion interaction needs client-side JavaScript
 import Script from "next/script";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import FAQAccordion from "./faq-accordion";
 
 const faqs = [
   {
@@ -88,18 +83,7 @@ export default function FAQSection() {
           </p>
         </div>
 
-        <Accordion type="single" collapsible className="w-full">
-          {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger className="text-left">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        <FAQAccordion faqs={faqs} />
 
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-4">

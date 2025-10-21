@@ -1,6 +1,7 @@
-"use client";
+// Server Component - SEO Optimized
+// Comparison data is fully crawlable for better search rankings
 import { Card, CardContent } from "@/components/ui/card";
-import { ScrollView } from "@/components/scroll-view";
+import { ComparisonScrollView } from "./comparison-client";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Check, X, Star, ArrowRight } from "lucide-react";
@@ -58,25 +59,25 @@ export default function ComparisonSection() {
     <section className="py-16 md:py-32" id="comparison">
       <div className="mx-auto max-w-7xl space-y-8 px-6 md:space-y-16">
         <div className="relative z-10 mx-auto max-w-3xl space-y-6 text-center">
-          <ScrollView>
+          <ComparisonScrollView>
             <Badge variant="outline" className="mb-4">
               Why Choose Us
             </Badge>
-          </ScrollView>
-          <ScrollView>
+          </ComparisonScrollView>
+          <ComparisonScrollView>
             <h2 className="text-4xl font-medium lg:text-5xl">
               Code Results vs The Rest
             </h2>
-          </ScrollView>
-          <ScrollView delay={0.2}>
+          </ComparisonScrollView>
+          <ComparisonScrollView delay={0.2}>
             <p className="text-muted-foreground text-lg leading-relaxed">
               You have options. Here&lsquo;s an honest look at how we compare to
               traditional agencies and freelancers—no BS, just facts.
             </p>
-          </ScrollView>
+          </ComparisonScrollView>
         </div>
 
-        <ScrollView delay={0.3}>
+        <ComparisonScrollView delay={0.3}>
           <div className="overflow-x-auto">
             <div className="min-w-[800px]">
               {/* Header */}
@@ -140,10 +141,10 @@ export default function ComparisonSection() {
               </div>
             </div>
           </div>
-        </ScrollView>
+        </ComparisonScrollView>
 
         {/* CTA Section */}
-        <ScrollView delay={0.4}>
+        <ComparisonScrollView delay={0.4}>
           <div className="mt-16 text-center">
             <Card className="max-w-2xl mx-auto bg-gradient-to-r from-primary/10 to-primary/5 border-primary/20">
               <CardContent className="p-8 space-y-4">
@@ -168,7 +169,7 @@ export default function ComparisonSection() {
               </CardContent>
             </Card>
           </div>
-        </ScrollView>
+        </ComparisonScrollView>
       </div>
     </section>
   );

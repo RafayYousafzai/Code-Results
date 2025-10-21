@@ -1,7 +1,8 @@
-"use client";
+// Server Component - SEO Optimized
+// Team information is fully crawlable for better search visibility
 import Link from "next/link";
-import { motion } from "motion/react";
-import { ScrollView } from "./scroll-view";
+import { TeamScrollView, TeamMotionDiv } from "./team-client";
+import Image from "next/image";
 
 const members = [
   {
@@ -52,7 +53,7 @@ export default function TeamSection() {
         <span className="text-caption -ml-6 -mt-3.5 block w-max bg-gray-50 px-6 dark:bg-gray-950">
           Team
         </span>
-        <ScrollView>
+        <TeamScrollView>
           <div className="mt-12 gap-4 sm:grid sm:grid-cols-2 md:mt-24">
             <div className="sm:w-2/5">
               <h2 className="text-3xl font-bold sm:text-4xl">Our dream team</h2>
@@ -66,28 +67,19 @@ export default function TeamSection() {
               </p>
             </div>
           </div>
-        </ScrollView>
+        </TeamScrollView>
         <div className="mt-12 md:mt-24">
-          <ScrollView stagger delay={0.02}>
+          <TeamScrollView stagger delay={0.02}>
             <div className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
               {members.map((member, index) => (
                 <div key={index} className="group overflow-hidden">
-                  <motion.div
-                    variants={{
-                      hidden: { opacity: 0, scale: 0.8, filter: "blur(10px)" },
-                      visible: {
-                        opacity: 1,
-                        scale: 1,
-                        filter: "blur(0px)",
-                      },
-                    }}
-                  >
-                    <img
+                  <TeamMotionDiv>
+                    <Image
                       className="h-96 w-full rounded-md object-cover object-top grayscale transition-all duration-500 hover:grayscale-0 group-hover:h-[22.5rem] group-hover:rounded-xl"
                       src={member.avatar}
-                      alt="team member"
-                      width="826"
-                      height="1239"
+                      alt={member.name}
+                      width={826}
+                      height={1239}
                     />
                     <div className="px-2 pt-2 sm:pb-0 sm:pt-4">
                       <div className="flex justify-between">
@@ -109,11 +101,11 @@ export default function TeamSection() {
                         </Link>
                       </div>
                     </div>
-                  </motion.div>
+                  </TeamMotionDiv>
                 </div>
               ))}
             </div>
-          </ScrollView>
+          </TeamScrollView>
         </div>
       </div>
     </section>
