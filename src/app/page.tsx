@@ -10,6 +10,7 @@ import TeamSection from "@/components/team";
 import WhyChooseUsSection from "@/components/sections/home/why-choose-us";
 import ComparisonSection from "@/components/sections/home/comparison";
 import ProcessSection from "@/components/sections/home/process";
+import FAQSection from "@/components/sections/home/faq";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       {/* <PortfolioSection /> */}
       <StatsSection />
       <TeamSection />
+      <FAQSection />
       <ContactSection />
     </main>
   );

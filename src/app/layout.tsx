@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { HeroHeader } from "@/components/header";
 import FooterSection from "@/components/footer";
 import { Providers } from "./providers";
+import StructuredData from "@/components/structured-data";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,9 +17,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "Code Results | AI Automation & Web Development";
+const title = "AI Automation Agency in Pakistan | Code Results";
 const description =
-  "Stop doing repetitive work. Let AI handle it. We build custom AI automation that fits your business perfectly so you can focus on what actually matters.";
+  "Top AI automation agency in Lahore, Pakistan. We build custom chatbots, AI voice agents, and automated workflows to help your business grow and save time.";
 const url = "https://coderesults.tech/";
 const imageUrl = `icon.png`;
 
@@ -26,34 +27,59 @@ export const metadata: Metadata = {
   title,
   description,
   keywords: [
-    "AI automation",
-    "web development",
-    "custom software",
-    "business automation",
+    // Primary Keywords
+    "AI automation agency",
+    "AI automation Pakistan",
+    "AI development company",
+    "business process automation",
+
+    // Secondary Keywords
+    "custom chatbots",
+    "AI voice agents",
+    "WhatsApp automation",
+    "Instagram chatbot",
+    "lead generation automation",
+    "workflow automation services",
+
+    // Local Keywords
+    "AI automation Lahore",
+    "AI development Lahore",
+    "automation agency Pakistan",
+    "chatbot developer Lahore",
+    "AI services Pakistan",
+
+    // Long-tail Keywords
+    "custom AI solutions for small business",
+    "AI customer support automation",
+    "automated lead generation system",
+    "business workflow automation Pakistan",
+
+    // Brand Keywords
     "Code Results",
     "Rafay Khan",
     "Rafay Yousafzai",
   ],
   authors: [
     {
-      name: "Rafay Khan",
+      name: "Rafay Yousafzai",
       url: "https://www.linkedin.com/in/rafay-yousafzai-177568260/",
     },
   ],
-  creator: "Rafay Khan",
+  creator: "Rafay Yousafzai",
   publisher: "Code Results",
 
   openGraph: {
-    title,
-    description,
+    title: "AI Automation Agency in Lahore, Pakistan | Code Results",
+    description:
+      "Leading AI automation agency in Lahore. Custom chatbots, AI voice agents, workflow automation & lead generation for SMBs. Save time & grow faster.",
     url,
-    siteName: "Code Results",
+    siteName: "Code Results - AI Automation Agency",
     images: [
       {
         url: imageUrl,
         width: 1280,
         height: 853,
-        alt: description,
+        alt: "Code Results - AI Automation Agency in Pakistan",
       },
     ],
     locale: "en_US",
@@ -62,8 +88,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title,
-    description,
+    title: "AI Automation Agency Pakistan | Code Results",
+    description:
+      "Top AI automation agency in Lahore. Custom chatbots, AI voice agents & workflow automation for businesses.",
     images: [imageUrl],
     creator: "@rafay-yousafzai",
   },
@@ -99,6 +126,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: url,
   },
+
+  category: "Technology",
 };
 
 export default function RootLayout({
@@ -108,6 +137,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <StructuredData />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
