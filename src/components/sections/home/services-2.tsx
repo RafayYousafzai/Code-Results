@@ -67,8 +67,8 @@ export default function Work() {
                   <div className=" lg:col-span-3">
                     <CustomCursorElement
                       cursor={
-                        <div className="text-zinc-950 text-lg font-medium">
-                          View
+                        <div className="text-zinc-950 text-sm font-medium items-center flex justify-center rounded-full p-12 ">
+                          {service.name}
                         </div>
                       }
                     >
@@ -99,16 +99,16 @@ export default function Work() {
                         }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                       >
-                        <Link href={service.url}>
-                          <Image
-                            src={service.img}
-                            alt={service.name}
-                            height="800"
-                            width="800"
-                            loading="lazy"
-                            className=" object-cover object-center  transition-all duration-500 w-full md:w-[80%] md:ml-auto mr-2 aspect-[4/3] rounded-xl border border-black/10 bg-muted group-hover:scale-[1.02] dark:border-white/5"
-                          />
-                        </Link>
+                        {/* <Link href={service.url}> */}
+                        <Image
+                          src={service.img}
+                          alt={service.name}
+                          height="800"
+                          width="800"
+                          loading="lazy"
+                          className=" object-cover object-center  transition-all duration-500 w-full md:w-[80%] md:ml-auto mr-2 aspect-[4/3] rounded-xl border border-black/10 bg-muted group-hover:scale-[1.02] dark:border-white/5"
+                        />
+                        {/* </Link> */}
                       </InView>
                     </CustomCursorElement>
                   </div>

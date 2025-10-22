@@ -1,4 +1,5 @@
 import HeroSection from "@/components/sections/home/hero-section";
+import IntroVideoSection from "@/components/sections/home/intro-video";
 // import PortfolioSection from "@/components/sections/home/portfolio-section";
 // import ServicesSection from "@/components/sections/home/services";
 import ServicesSection2 from "@/components/sections/home/services-2";
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <HeroSection />
+      <IntroVideoSection />
       <StorySection />
       <ServicesSection2 />
       <WhyChooseUsSection />
