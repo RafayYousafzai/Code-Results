@@ -9,7 +9,7 @@ const members = [
     name: "Rafay Khan",
     role: "Founder - CEO",
     avatar: "/images/team/rafay.jpg",
-    link: "https://www.linkedin.com/in/rafay-yousafzai-177568260/",
+    link: "https://rafaykhan.dev",
   },
   // {
   //   name: "Elijah Jones",

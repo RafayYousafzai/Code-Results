@@ -66,7 +66,7 @@ export default function FooterSection() {
               </svg>
             </Link>
             <Link
-              href="https://www.linkedin.com/in/rafay-yousafzai-177568260"
+              href="https://www.linkedin.com/in/rafay-khan-177568260/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"

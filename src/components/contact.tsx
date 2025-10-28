@@ -126,7 +126,7 @@ export default function FeaturesSection() {
                   </div>
                   <div className="space-y-3">
                     <Link
-                      href="www.linkedin.com/in/rafay-yousafzai-177568260"
+                      href="www.linkedin.com/in/rafay-khan-177568260/"
                       className="flex items-center gap-2 text-sm text-foreground hover:text-primary font-medium"
                       target="_blank"
                     >

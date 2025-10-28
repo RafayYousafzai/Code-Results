@@ -1,44 +1,37 @@
 export const PORTFOLIO_CONTENT = [
   {
-    name: "GreenScape Landscaping",
+    name: "AI-Powered Lead Generation & Outreach System",
     description:
-      "Modern landing page for a landscaping company featuring service showcases, before/after galleries, and instant quote requests.",
-    img: "/images/portfolio/eco.jpg",
-    url: "#",
+      "Fully automated B2B lead generation pipeline that scrapes, cleans, and personalizes outreach using GPT. Saves hours of manual data handling and improves response rates.",
+    img: "/images/work/AI-Powered Lead Generation & Cold Outreach Automation System.jpg",
+    url: "/contact",
   },
   {
-    name: "Starlight Prom Nights",
+    name: "AI Real Estate Chatbot with Property Search",
     description:
-      "Vibrant promotional page for high school prom parties with ticket booking, photo galleries, and theme selection.",
-    img: "/images/portfolio/event.jpg",
-    url: "#",
+      "AI chatbot that assists users in finding properties based on their preferences. Integrates with real estate listings and provides personalized recommendations and 24/7 customer support.",
+    img: "/images/work/elite-property.png",
+    url: "https://elitepropertypk.com/",
   },
   {
-    name: "Prestige College of Arts",
+    name: "Custom AI Knowledge Base (RAG System)",
     description:
-      "Elegant academic landing page with program highlights, virtual campus tours, and application portals.",
-    img: "/images/portfolio/art.jpg",
-    url: "#",
+      "Smart chatbot that answers questions directly from company docs with source references. Includes an admin dashboard to manage uploads and view question logs.",
+    img: "/images/work/Custom AI Knowledge Base RAG System.jpg",
+    url: "/contact",
   },
   {
-    name: "CycleSpot Rentals",
+    name: "AI Voice Appointment Scheduling Agent (Riley)",
     description:
-      "Bike rental platform with location-based availability, pricing calculators, and secure online bookings.",
-    img: "/images/portfolio/bike.jpg",
-    url: "#",
+      "Human-like AI voice agent that manages appointment scheduling and inquiries for clinics. Automates front-desk work while maintaining a professional and friendly tone.",
+    img: "/images/work/AI Voice Appointment Scheduling Assistant (Riley).png",
+    url: "/contact",
   },
   {
-    name: "Bella Cucina Restaurant",
+    name: "AI Stock Analysis & Intelligence Agent",
     description:
-      "Appetizing restaurant landing page with menu displays, reservation system, and chef's specials highlights.",
-    img: "/images/portfolio/resturant.jpg",
-    url: "#",
-  },
-  {
-    name: "SereneMind Meditation",
-    description:
-      "Calming meditation app interface with guided session timers, progress tracking, and relaxation music integration.",
-    img: "/images/portfolio/meditation.jpg",
-    url: "#",
+      "AI system that performs real-time stock analysis using financial metrics, technical indicators, and sentiment from live news sources. Generates human-like analysis reports automatically.",
+    img: "/images/work/AI Stock Analysis Workspace.png",
+    url: "/contact",
   },
 ];

@@ -1,6 +1,6 @@
 import HeroSection from "@/components/sections/home/hero-section";
 import IntroVideoSection from "@/components/sections/home/intro-video";
-// import PortfolioSection from "@/components/sections/home/portfolio-section";
+import PortfolioSection from "@/components/sections/home/portfolio-section";
 // import ServicesSection from "@/components/sections/home/services";
 import ServicesSection2 from "@/components/sections/home/services-2";
 import StatsSection from "@/components/sections/home/stats";
@@ -20,10 +20,10 @@ export default function Home() {
       <IntroVideoSection />
       <StorySection />
       <ServicesSection2 />
+      <PortfolioSection />
       <WhyChooseUsSection />
       <ProcessSection />
       <ComparisonSection />
-      {/* <PortfolioSection /> */}
       <StatsSection />
       <TeamSection />
       <FAQSection />

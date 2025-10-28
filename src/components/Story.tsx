@@ -40,14 +40,15 @@ export default function StorySection() {
                   I watched too many business owners waste hours every day on
                   tasks a computer could handle in seconds. Copying data between
                   spreadsheets. Answering the same customer questions. Chasing
-                  leads manually. It didn&lsquo;t make sense.
+                  leads manually. It didn&lsquo;t make sense when AI can do it
+                  for you.
                   <br />
                   <br />
                   So I started building AI automation that actually solves these
-                  problems. Not fancy tech for the sake of it—just practical
-                  solutions that give people their time back. Now, businesses
-                  use what I build to work smarter, grow faster, and finally
-                  focus on what they&lsquo;re actually good at.
+                  problems. Not fancy tech for the sake of it just practical
+                  solutions that give people their time back. Now, businesses I
+                  have worked with use it to work smarter, grow faster, and
+                  finally focus on what they&lsquo;re actually good at.
                 </p>
                 <br />
                 <h3 className="text-xl font-semibold">What I Believe</h3>
@@ -77,9 +78,9 @@ export default function StorySection() {
               <CardContent className="space-y-4 p-6">
                 <h3 className="text-xl font-semibold">My Promise</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  I&lsquo;ll be honest about what AI can and can&lsquo;t do for
-                  you. If automation isn&lsquo;t the answer, I&lsquo;ll tell
-                  you. No overselling, no empty promises.
+                  I only work on projects where I know I can deliver promising
+                  ROI. If automation isn't the right answer, I will tell you
+                  honestly. No overselling, no empty promises.
                 </p>
               </CardContent>
             </Card>
@@ -89,8 +90,8 @@ export default function StorySection() {
                 <h3 className="text-xl font-semibold">What&lsquo;s Next</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   I&lsquo;m focused on helping more small and medium businesses
-                  discover what&lsquo;s possible with AI. Let&lsquo;s build
-                  something that actually makes a difference.
+                  so you won't get lost behind the big companies. Let&lsquo;s
+                  build something that actually makes a difference
                 </p>
               </CardContent>
             </Card>

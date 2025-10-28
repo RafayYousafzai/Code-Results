@@ -1,7 +1,5 @@
 import PortfolioCard from "@/components/portfolio-card";
 import { PORTFOLIO_CONTENT } from "@/content/portfolio";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 
 export default function PortfolioSection() {
   return (
@@ -12,11 +10,12 @@ export default function PortfolioSection() {
       <div className="mx-auto max-w-5xl space-y-12 px-6">
         <div className="relative z-10 grid items-center gap-4 md:grid-cols-2 md:gap-12">
           <h2 className="text-4xl font-semibold">
-            The Lyra ecosystem brings together our models
+            AI Solutions That Drive Real Business Results
           </h2>
-          <p className="max-w-sm sm:ml-auto">
-            Empower your team with workflows that adapt to your needs, whether
-            you prefer git synchronization or a AI Agents interface.
+          <p className="max-w-sm sm:ml-auto text-balance">
+            Explore our portfolio of intelligent automation systems from AI
+            voice agents and lead generation pipelines to custom knowledge bases
+            and stock analysis tools. 
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">

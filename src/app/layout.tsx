@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Rafay Yousafzai",
-      url: "https://www.linkedin.com/in/rafay-yousafzai-177568260/",
+      url: "https://www.linkedin.com/in/rafay-khan-177568260//",
     },
   ],
   creator: "Rafay Yousafzai",

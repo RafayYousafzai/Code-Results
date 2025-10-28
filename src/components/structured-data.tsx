@@ -22,7 +22,7 @@ export default function StructuredData() {
       addressCountry: "PK",
     },
     sameAs: [
-      "https://www.linkedin.com/in/rafay-yousafzai-177568260/",
+      "https://www.linkedin.com/in/rafay-khan-177568260//",
       "https://wa.me/+923289462807",
     ],
     foundingDate: "2024",

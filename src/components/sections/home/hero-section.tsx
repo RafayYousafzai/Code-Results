@@ -159,7 +159,7 @@ export default function HeroSection() {
                     className="h-10.5 rounded-xl px-5"
                   >
                     <Link
-                      href="https://www.linkedin.com/in/rafay-yousafzai-177568260/"
+                      href="https://www.linkedin.com/in/rafay-khan-177568260//"
                       target="_blank"
                     >
                       <svg

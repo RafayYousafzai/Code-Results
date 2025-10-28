@@ -8,25 +8,11 @@ import Image from "next/image";
 
 const reasons = [
   {
-    image: "/images/process/1. Discovery & Consultation.webp",
-    title: "Built for YOUR Business",
-    description:
-      "No templates. No one-size-fits-all. Every automation we create is custom-built around how your business actually works—not how we think it should work.",
-    highlight: "Custom solutions that fit perfectly",
-  },
-  {
     image: "/images/process/2. Strategy & Planning.webp",
     title: "We Focus on Real Results",
     description:
       "We're not here to sell you fancy tech you don't need. We build automation that saves you actual hours, brings in more leads, and makes your daily work easier. That's it.",
     highlight: "Measurable time and cost savings",
-  },
-  {
-    image: "/images/process/3. Testing & Optimization.webp",
-    title: "Honest About What Works",
-    description:
-      "If AI automation isn't the right solution for your problem, we'll tell you. We'd rather be upfront than waste your time and money on something that won't deliver.",
-    highlight: "No overselling, just honest advice",
   },
   {
     image: "/images/process/5. Launch & Deployment.webp",
@@ -48,6 +34,13 @@ const reasons = [
     description:
       "We know you're not a massive corporation with unlimited budget. Our solutions are priced fairly and designed specifically for businesses like yours that need to grow smart.",
     highlight: "Fair pricing, maximum value",
+  },
+  {
+    image: "/images/process/3. Testing & Optimization.webp",
+    title: "Honest About What Works",
+    description:
+      "If AI automation isn't the right solution for your problem, we'll tell you. We'd rather be upfront than waste your time and money on something that won't deliver.",
+    highlight: "No overselling, just honest advice",
   },
 ];
 
@@ -71,7 +64,7 @@ export default function WhyChooseUsSection() {
           </WhyChooseUsScrollView>
           <WhyChooseUsScrollView delay={0.2}>
             <p className="text-muted-foreground text-lg">
-              We don&apos;t just build solutions – we build partnerships.
+              We don&apos;t just build solutions we build partnerships.
               Here&apos;s what sets us apart from traditional agencies and
               freelancers in the market.
             </p>
@@ -81,7 +74,7 @@ export default function WhyChooseUsSection() {
         <div className="grid gap-6 md:gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {reasons.map((reason, index) => (
             <WhyChooseUsScrollView key={index} delay={0.1 * index}>
-              <Card className="group h-full transition-all duration-300 hover:shadow-lg hover:border-primary/20 hover:-translate-y-1 relative overflow-hidden">
+              <Card className="group border-none h-full transition-all duration-300 hover:shadow-lg hover:border-primary/20 hover:-translate-y-1 relative overflow-hidden">
                 {/* Background Image with Blur */}
                 <div className="absolute inset-0 z-0">
                   <Image
@@ -120,7 +113,7 @@ export default function WhyChooseUsSection() {
             <div className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 rounded-full">
               <CheckCircle className="h-5 w-5 text-primary" />
               <span className="font-medium">
-                Join 500+ satisfied clients who chose the Code Results advantage
+                Join 17+ satisfied clients who chose the Code Results advantage
               </span>
             </div>
           </div>
